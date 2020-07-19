@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>管理导航</title>
+
+		<link rel="stylesheet" href="css/adnav.css" />
+		<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<!-- 可选的 Bootstrap 主题文件 -->
+		<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+		<!-- Bootstrap 核心 JavaScript 文件 -->
+	</head>
+
+	<body>
+		
+		<div class="main">
+			<div class="index">
+				<div class="bg">
+					<div class="head">
+						<div class="boxi">
+							<!--							<img src="img/QQ图片20200716132751.png">-->
+						</div>
+<!--						<h2 id="name"></h2>-->
+<!--						<div class="info">-->
+<!--							<p id="age"></p>-->
+<!--						</div>-->
+					</div>
+					<div class="menu">
+						<button id="navs">导航显示
+										<img src="img/jiantou (1).png">
+						</button>
+						<button id="addfa">添加父类导航
+										<img src="img/jiantou (1).png">
+						</button>
+						<button id="addson">添加子类导航
+										<img src="img/jiantou (1).png">
+						</button>
+						<button id="return">返回管理
+					    	 <img src="img/jiantou (1).png">
+					    </button>
+					</div>
+				</div>
+			</div>
+			<div class="content">
+				<div class="header">
+					<div class="logo">
+						<img src="img/L1.png">
+					</div>
+					<div class="xiang">
+						<a href="index.html">返回首页</a>
+					</div>
+					<div class="xiang">
+						<a href="news.html">校园新闻</a>
+					</div>
+					<div class="xiang">
+						<a href="inform.html">通知公告</a>
+					</div>
+					<div class="xiang">
+						<a href="nav.html">本站导航</a>
+					</div>
+				</div>
+				<div class="changefa">
+					名字：<input type="text" id="changefaname"><br/> 链接：
+					<input type="text" id="changefalink" /><br/>
+					<button id="changefaok">确认修改</button>
+				</div>
+				<div class="changeson">
+					名字：<input type="text" id="changesonname"><br/> 链接：
+					<input type="text" id="changesonlink" /><br/>
+					父级：<input id="changefather" type="text"></input><br/>
+					<button id="changesonok">确认修改</button>
+
+				</div>
+				<div class="table">
+					<table cellspacing="0" id="table2" border="1">
+						<tr>
+							<td>父类id</td>
+							<td>已有父类</td>
+						</tr>
+
+					</table>
+				</div>
+					
+				<div class="addfather">
+					名字：<input type="text" id="addname1"><br/> 链接：
+					<input type="text" id="addlink1" /><br/>
+					<button id="addfaok">确认添加</button>
+				</div>
+				<div class="addson">
+					名字：<input type="text" id="addname2"><br/> 链接：
+					<input type="text" id="addlink2" /><br/> 父级：
+					<input id="father" type="text"></input><br/>
+					<button id="addsonok">确认添加</button>
+				</div>
+				<div class="navs">
+					<div class="container">
+						<!--<div class="col-md-7">
+							<ul>
+								<li class="stair">
+									<a href="index.html">网站首页</a>
+									<div id="changefa">更改</div>
+									<div id="deletefa">删除</div>	
+								</li>
+								
+								<li id="id"></li>
+
+								<li class="item">
+									<a href="news.html"><img src="img/tuya_huabanfuben.png">校园新闻</a>
+									<div id="changeson">更改</div>
+									<div id="deleteson">删除</div>
+								</li>
+								<li class="item">
+									<a href="inform.html"><img src="img/tuya_huabanfuben.png">通知公告</a>
+								</li>
+
+							</ul>
+						</div>
+						<div class="col-md-7">
+							<ul>
+								
+									
+									<li class="stair">
+										<a href="http://xsc.nenu.edu.cn/bmjs.htm">部门介绍</a>
+									</li>
+									<li id="id"></li>
+									<li class="item">
+										<a href="http://xsc.nenu.edu.cn/bmjs/bmjj.htm"><img src="img/tuya_huabanfuben.png">部门简介</a>
+									</li>
+									<li class="item">
+										<a href="http://xsc.nenu.edu.cn/bmjs/ryxx.htm"><img src="img/tuya_huabanfuben.png">人员信息</a>
+									</li>
+									
+								
+							</ul>
+						</div>
+						<div class="col-md-7">
+							<ul>
+								<div class="inner">
+									
+									<li class="stair">
+										<a href="">心灵港湾</a>
+									</li>
+									<li id="id"></li>
+
+									<li class="item">
+										<a href=""><img src="img/tuya_huabanfuben.png">中心简介</a>
+									</li>
+									<li class="item">
+										<a href=""><img src="img/tuya_huabanfuben.png">教育培训</a>
+									</li>
+									<li class="item">
+										<a href=""><img src="img/tuya_huabanfuben.png">心理咨询</a>
+									</li>
+									<li class="item">
+										<a href=""><img src="img/tuya_huabanfuben.png">危机干预</a>
+									</li>
+									<li class="item">
+										<a href=""><img src="img/tuya_huabanfuben.png">援助热线</a>
+									</li>
+
+									
+								</div>
+							</ul>
+						</div>
+						<div class="col-md-7">
+							<ul>
+								
+									
+									<li class="stair">
+										<a href="http://xsc.nenu.edu.cn/szjy.htm">思政教育</a>
+									</li>
+									<li id="id"></li>
+
+									<li class="item">
+										<a href="http://xsc.nenu.edu.cn/szjy/rxdh.htm"><img src="img/tuya_huabanfuben.png">入学导航 </a>
+									</li>
+									<li class="item">
+										<a href="http://xsc.nenu.edu.cn/szjy/dxpy.htm"><img src="img/tuya_huabanfuben.png">典型培育</a>
+									</li>
+									<li class="item">
+										<a href=""><img src="img/tuya_huabanfuben.png">红色体验</a>
+									</li>
+									<li class="item">
+										<a href=""><img src="img/tuya_huabanfuben.png">毕业教育</a>
+									</li>
+									<li class="item">
+										<a href=""><img src="img/tuya_huabanfuben.png">网络思政</a>
+									</li>
+									<li class="item">
+										<a href=""><img src="img/tuya_huabanfuben.png">学院特色工作</a>
+									</li>
+
+									
+								</div>
+							</ul>
+						</div>-->
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script type="text/javascript" src="js/adnav.js"></script>
+	</body>
+
+</html>
